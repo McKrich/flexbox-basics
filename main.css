@@ -1,0 +1,33 @@
+  * {
+    box-sizing: border-box;
+  }
+
+  #parent {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .child {
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    height:80px;
+    background-color: orange;
+    flex: 1;
+    min-width: 25%;
+    border: 5px solid white;
+  }
+
+  @media (max-width: 768px) {
+    .child {
+      min-width: 50%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .child {
+      min-width: 100%;
+    }
+  }
